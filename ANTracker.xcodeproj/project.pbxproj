@@ -10,7 +10,6 @@
 		5411AFCA1A0E2952003715F7 /* ANDIYTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5411AFC91A0E2952003715F7 /* ANDIYTracker.m */; };
 		5431871D1A0DBB54004A5EAE /* PageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5431871B1A0DBB54004A5EAE /* PageController.m */; };
 		5431871F1A0DBB54004A5EAE /* PageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5431871C1A0DBB54004A5EAE /* PageController.xib */; };
-		543187201A0DBB54004A5EAE /* PageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5431871C1A0DBB54004A5EAE /* PageController.xib */; };
 		543187401A0DDABA004A5EAE /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 543187271A0DDABA004A5EAE /* CDataScanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		543187421A0DDABA004A5EAE /* CFilteringJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5431872A1A0DDABA004A5EAE /* CFilteringJSONSerializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		543187441A0DDABA004A5EAE /* CJSONDeserializer_BlocksExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5431872C1A0DDABA004A5EAE /* CJSONDeserializer_BlocksExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -393,7 +392,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				543187201A0DBB54004A5EAE /* PageController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -395,6 +395,11 @@ static unsigned int numProcessors;
         // Group不是一般的异步，应该是能够支持并发线程，所以要捕捉是否禁止并发，springox
         for (ANTrackerNode *trackerNode in trackers)
         {
+            // 支持指定类型过滤，springox(20141108)
+            if (NULL != trackInfo->target && ![trackerNode->tracker isKindOfClass:trackInfo->target]) {
+                continue;
+            }
+            
             dispatch_group_async(trackingGroup, trackerNode->trackerQueue, ^{
                 @autoreleasepool {
                     if (nil != trackInfo->page)

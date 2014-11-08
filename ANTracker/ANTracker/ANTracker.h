@@ -71,7 +71,7 @@ typedef enum _ANTrackType
     NSNumber *durations;
     NSDictionary *attributes;
     NSString *page;
-    NSInteger tag;
+    Class target;   // 用于指定info的具体execute对象(tracker)的类型
 }
 
 /*

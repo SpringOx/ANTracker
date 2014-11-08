@@ -242,7 +242,6 @@
                             </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="vJ3-5c-BhN" secondAttribute="trailing" constant="40" id="D7c-Oc-RiZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rHi-2O-V5Z" secondAttribute="trailing" constant="40" id="F6n-aN-GHm"/>
-                            <constraint firstItem="CBJ-3g-lTI" firstAttribute="top" secondItem="NKB-0G-UDc" secondAttribute="bottom" constant="3" id="FgS-d8-EYE"/>
                             <constraint firstItem="vJ3-5c-BhN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="LHE-0a-Rox"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bkU-jr-VUB" secondAttribute="trailing" constant="40" id="PVJ-fd-5rj"/>
                             <constraint firstItem="1Rm-D7-poK" firstAttribute="top" secondItem="rHi-2O-V5Z" secondAttribute="bottom" constant="8" id="QUO-Of-aS4"/>
@@ -301,7 +300,6 @@
                                 <exclude reference="V6A-Cj-pZH"/>
                                 <exclude reference="h1q-kj-wQ3"/>
                                 <exclude reference="wR2-n5-9KD"/>
-                                <exclude reference="FgS-d8-EYE"/>
                                 <exclude reference="SxA-ZU-a8V"/>
                                 <exclude reference="ccJ-sR-p4t"/>
                                 <exclude reference="pCb-g9-hyx"/>
@@ -347,7 +345,6 @@
                                 <include reference="V6A-Cj-pZH"/>
                                 <include reference="h1q-kj-wQ3"/>
                                 <include reference="wR2-n5-9KD"/>
-                                <include reference="FgS-d8-EYE"/>
                                 <include reference="SxA-ZU-a8V"/>
                             </mask>
                         </variation>

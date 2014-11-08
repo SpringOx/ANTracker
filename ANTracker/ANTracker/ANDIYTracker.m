@@ -17,6 +17,7 @@
     self = [super init];
     if (self) {
         
+        target = [ANDIYTracker class];
         type = _type;
         diy = _diy;
     }
