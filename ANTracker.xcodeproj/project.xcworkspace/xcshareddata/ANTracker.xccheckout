@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1EEEB860-B3FD-4E97-AF71-C4C95F3E087F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ANTracker</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>14592F31E9367A8F08815B34F61F83595DB19929</key>
+		<string>https://github.com/SpringOx/ANTracker.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ANTracker.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>14592F31E9367A8F08815B34F61F83595DB19929</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/SpringOx/ANTracker.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>14592F31E9367A8F08815B34F61F83595DB19929</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>14592F31E9367A8F08815B34F61F83595DB19929</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ANTracker</string>
+		</dict>
+	</array>
+</dict>
+</plist>
