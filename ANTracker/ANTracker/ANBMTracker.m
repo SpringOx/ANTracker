@@ -10,6 +10,7 @@
 #import "ANTracker.h"
 #import "BaiduMobStat.h"
 
+#warning 需要自行配置百度移动统计平台提供的app_key
 static NSString *const TRACKER_BM_APP_KEY = @"78528e52cd";
 static int const TRACKER_BM_SEND_INTERVAL = 1;
 static NSString *const TRACKER_BM_CHANNEL_ID = @"AppStore";

@@ -10,6 +10,7 @@
 #import "ANTracker.h"
 #import "MobClick.h"
 
+#warning 需要自行配置友盟统计平台提供的app_key
 static NSString *const TRACKER_UMENG_APP_KEY = @"545a5d56fd98c50cdc007655";
 static int const TRACKER_UMENG_SEND_INTERVAL = 60;
 static NSString *const TRACKER_UMENG_CHANNEL_ID = @"AppStore";
