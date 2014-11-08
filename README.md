@@ -1,4 +1,5 @@
 ANTracker
 =========
 
-A statistical framework for multi-platform support, to support UMeng statistics and Baidu statistics, and more.
+A statistical framework for multi-platform support, to support UMAnalytics and BaiduMobStatistics, and more.
+
