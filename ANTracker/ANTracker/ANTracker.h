@@ -35,9 +35,6 @@
 - (void)willRemoveTracker;
 /*
  */
-- (BOOL)asynchronousEabled;
-/*
- */
 - (dispatch_queue_t)trackerQueue;
 /*
  */
@@ -154,6 +151,10 @@ typedef enum _ANTrackType
 /*
  */
 + (void)trackPageEnd:(NSString *)page;
+
+/*
+ */
++ (void)trackWithInfo:(ANTrackInfo *)info;
 
 /*
  */

@@ -23,6 +23,7 @@ static NSString *const TRACKER_BM_CHANNEL_ID = @"AppStore";
 @end
 
 @implementation ANBMTracker
+
 - (id)init
 {
     self = [super init];

@@ -24,7 +24,7 @@
 {
     [super viewDidAppear:animated];
     
-    // 页面的进入统计例子，springox(20141108)
+#warning     // 页面的进入统计例子，springox(20141108)
     [ANTrackServer trackPageBegin:NSStringFromClass([self class])];
 }
 
@@ -32,7 +32,7 @@
 {
     [super viewDidDisappear:animated];
     
-    // 页面的退出统计例子，springox(20141108)
+#warning     // 页面的退出统计例子，springox(20141108)
     [ANTrackServer trackPageEnd:NSStringFromClass([self class])];
 }
 

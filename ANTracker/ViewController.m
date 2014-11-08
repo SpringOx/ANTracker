@@ -23,7 +23,8 @@
     // 初始化并加载自己定制的统计平台，UM表示友盟，BM表示百度移动，springox(20141108)
     ANUMTracker *umTracker = [[ANUMTracker alloc] init];
     ANBMTracker *bmTracker = [[ANBMTracker alloc] init];
-    [ANTrackServer startWithTrackers:[NSArray arrayWithObjects:umTracker, bmTracker, nil]];
+    ANDIYTracker *diyTracker = [[ANDIYTracker alloc] init];
+    [ANTrackServer startWithTrackers:[NSArray arrayWithObjects:umTracker, bmTracker, diyTracker, nil]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -76,8 +77,13 @@
                                    event:@"ActivityEvent"
                                    label:@"ParamValue"];
             break;
-        
+            
         case 7:
+            // 自定义统计Info，springox(20141108)
+            [self trackWithInfo];
+            break;
+        
+        case 8:
             // 页面的进入退出的统计例子，springox(20141108)
             [self presentPageController];
             break;
@@ -85,6 +91,12 @@
         default:
             break;
     }
+}
+
+- (void)trackWithInfo
+{
+    ANDIYTrackInfo *info = [[ANDIYTrackInfo alloc] initWithType:ANTrackTypeNormal diy:@"This is diy conent!"];
+    [ANTrackServer trackWithInfo:info];
 }
 
 - (void)presentPageController

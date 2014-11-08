@@ -12,5 +12,6 @@
 #import "ANTracker.h"
 #import "ANUMTracker.h"
 #import "ANBMTracker.h"
+#import "ANDIYTracker.h"
 
 #endif

@@ -23,18 +23,34 @@
                         <action selector="didPressReturnButtonAction:" destination="-1" eventType="touchUpInside" id="JFz-nD-bwE"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page Begin and Page End" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1W-Yc-XJZ">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="67" y="106" width="266" height="27"/>
+                    </variation>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="W1W-Yc-XJZ" secondAttribute="trailing" constant="20" id="3eg-FS-f1c"/>
                 <constraint firstAttribute="trailing" secondItem="VEv-nF-iow" secondAttribute="trailing" constant="120" id="Eol-tb-H9a"/>
+                <constraint firstItem="W1W-Yc-XJZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="106" id="UdK-3u-OZz"/>
                 <constraint firstItem="VEv-nF-iow" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="232" id="WQc-bY-TyK"/>
+                <constraint firstItem="W1W-Yc-XJZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="ZJa-eb-xev"/>
                 <constraint firstItem="VEv-nF-iow" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="120" id="cr1-cU-epc"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="VEv-nF-iow"/>
+                    <exclude reference="W1W-Yc-XJZ"/>
                 </mask>
                 <mask key="constraints">
+                    <exclude reference="3eg-FS-f1c"/>
+                    <exclude reference="UdK-3u-OZz"/>
+                    <exclude reference="ZJa-eb-xev"/>
                     <exclude reference="Eol-tb-H9a"/>
                     <exclude reference="WQc-bY-TyK"/>
                     <exclude reference="cr1-cU-epc"/>
@@ -50,6 +66,17 @@
                     <include reference="cr1-cU-epc"/>
                 </mask>
             </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="W1W-Yc-XJZ"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="3eg-FS-f1c"/>
+                    <include reference="UdK-3u-OZz"/>
+                    <include reference="ZJa-eb-xev"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="283" y="149"/>
         </view>
     </objects>
 </document>

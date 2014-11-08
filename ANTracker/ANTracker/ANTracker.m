@@ -306,6 +306,11 @@ static unsigned int numProcessors;
            page:page];
 }
 
++ (void)trackWithInfo:(ANTrackInfo *)info
+{
+    [self lt_track:info];
+}
+
 + (void)addTracker:(id <ANTracker>)tracker
 {
     if (nil == tracker) {return;}
