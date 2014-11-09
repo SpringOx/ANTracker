@@ -8,7 +8,20 @@ This is an integrated statistical framework for better integration or switching 
 ![Screenshot](https://dl.dropboxusercontent.com/u/59801943/Screenshots/ANTracker-1.png)
 ![Screenshot](https://dl.dropboxusercontent.com/u/59801943/Screenshots/ANTracker-2.png)
 
+
+
 ### Usage(用法)
+
+``` objective-c
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        // 初始化并加载自己定制的统计平台，UM表示友盟，BM表示百度移动，springox(20141108)
+        ANUMTracker *umTracker = [[ANUMTracker alloc] init];
+        ANBMTracker *bmTracker = [[ANBMTracker alloc] init];
+        ANDIYTracker *diyTracker = [[ANDIYTracker alloc] init];
+        [ANTrackServer startWithTrackers:[NSArray arrayWithObjects:umTracker, bmTracker, diyTracker, nil]];
+    });
+```
 
 ``` objective-c
     switch (button.tag) {
@@ -70,6 +83,7 @@ This is an integrated statistical framework for better integration or switching 
     }
     
 ```
+
 ``` objective-c
     ANDIYTrackInfo *info = [[ANDIYTrackInfo alloc] initWithType:ANTrackTypeNormal diy:@"This is diy conent!"];
     [ANTrackServer trackWithInfo:info];
