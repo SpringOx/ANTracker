@@ -55,6 +55,7 @@ static NSString *const TRACKER_UMENG_CHANNEL_ID = @"AppStore";
     [MobClick startWithAppkey:TRACKER_UMENG_APP_KEY reportPolicy:(ReportPolicy)SEND_INTERVAL channelId:TRACKER_UMENG_CHANNEL_ID];
     
 #if DEBUG
+    // 获取友盟测试设备ID，springox(20141109)
     Class cls = NSClassFromString(@"UMANUtil");
     SEL deviceIDSelector = @selector(openUDIDString);
     NSString *deviceID = nil;

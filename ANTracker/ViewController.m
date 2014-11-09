@@ -20,16 +20,24 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    // 初始化并加载自己定制的统计平台，UM表示友盟，BM表示百度移动，springox(20141108)
-    ANUMTracker *umTracker = [[ANUMTracker alloc] init];
-    ANBMTracker *bmTracker = [[ANBMTracker alloc] init];
-    ANDIYTracker *diyTracker = [[ANDIYTracker alloc] init];
-    [ANTrackServer startWithTrackers:[NSArray arrayWithObjects:umTracker, bmTracker, diyTracker, nil]];
+    [self loadTrackers];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)loadTrackers
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        // 初始化并加载自己定制的统计平台，UM表示友盟，BM表示百度移动，springox(20141108)
+        ANUMTracker *umTracker = [[ANUMTracker alloc] init];
+        ANBMTracker *bmTracker = [[ANBMTracker alloc] init];
+        ANDIYTracker *diyTracker = [[ANDIYTracker alloc] init];
+        [ANTrackServer startWithTrackers:[NSArray arrayWithObjects:umTracker, bmTracker, diyTracker, nil]];
+    });
 }
 
 - (IBAction)didPressButtonAction:(UIButton *)button
@@ -80,7 +88,7 @@
             
         case 7:
             // 自定义统计Info，springox(20141108)
-            [self trackWithInfo];
+            [self trackWithTrackInfo];
             break;
         
         case 8:
@@ -93,7 +101,7 @@
     }
 }
 
-- (void)trackWithInfo
+- (void)trackWithTrackInfo
 {
     ANDIYTrackInfo *info = [[ANDIYTrackInfo alloc] initWithType:ANTrackTypeNormal diy:@"This is diy conent!"];
     [ANTrackServer trackWithInfo:info];

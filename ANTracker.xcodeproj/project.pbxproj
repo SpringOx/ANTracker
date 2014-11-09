@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5411AFCA1A0E2952003715F7 /* ANDIYTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5411AFC91A0E2952003715F7 /* ANDIYTracker.m */; };
+		541A240D1A0F618600DBA6DA /* ANTrackServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 541A240C1A0F618600DBA6DA /* ANTrackServer.m */; };
 		5431871D1A0DBB54004A5EAE /* PageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5431871B1A0DBB54004A5EAE /* PageController.m */; };
 		5431871F1A0DBB54004A5EAE /* PageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5431871C1A0DBB54004A5EAE /* PageController.xib */; };
 		543187401A0DDABA004A5EAE /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 543187271A0DDABA004A5EAE /* CDataScanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -52,6 +53,8 @@
 /* Begin PBXFileReference section */
 		5411AFC81A0E2952003715F7 /* ANDIYTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANDIYTracker.h; sourceTree = "<group>"; };
 		5411AFC91A0E2952003715F7 /* ANDIYTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANDIYTracker.m; sourceTree = "<group>"; };
+		541A240B1A0F618600DBA6DA /* ANTrackServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTrackServer.h; sourceTree = "<group>"; };
+		541A240C1A0F618600DBA6DA /* ANTrackServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANTrackServer.m; sourceTree = "<group>"; };
 		5431871A1A0DBB54004A5EAE /* PageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageController.h; sourceTree = "<group>"; };
 		5431871B1A0DBB54004A5EAE /* PageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageController.m; sourceTree = "<group>"; };
 		5431871C1A0DBB54004A5EAE /* PageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageController.xib; sourceTree = "<group>"; };
@@ -268,6 +271,8 @@
 				543187211A0DD51C004A5EAE /* ANConstants.h */,
 				545FCAF41A00BD6A004F4A87 /* ANTracker.h */,
 				545FCAF51A00BD6A004F4A87 /* ANTracker.m */,
+				541A240B1A0F618600DBA6DA /* ANTrackServer.h */,
+				541A240C1A0F618600DBA6DA /* ANTrackServer.m */,
 				545FCAF61A00BD6A004F4A87 /* ANUMTracker.h */,
 				545FCAF71A00BD6A004F4A87 /* ANUMTracker.m */,
 				543187541A0DDC50004A5EAE /* ANBMTracker.h */,
@@ -403,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5431874E1A0DDABA004A5EAE /* CJSONDeserializer.m in Sources */,
+				541A240D1A0F618600DBA6DA /* ANTrackServer.m in Sources */,
 				5431874C1A0DDABA004A5EAE /* NSDictionary_JSONExtensions.m in Sources */,
 				543187421A0DDABA004A5EAE /* CFilteringJSONSerializer.m in Sources */,
 				543187521A0DDABA004A5EAE /* CJSONSerializer.m in Sources */,

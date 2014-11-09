@@ -8,51 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol ANTracker;
-
-@class ANTrackInfo;
-@class ANTrackServer;
-
-@protocol ANTracker <NSObject>
-
-@required
-/*
- */
-- (void)trackEvent:(ANTrackInfo *)trackInfo;
-/*
- */
-- (void)trackPage:(ANTrackInfo *)trackInfo;
-
-@optional
-/*
- */
-- (void)setConfig;
-/*
- */
-- (void)didAddTracker;
-/*
- */
-- (void)willRemoveTracker;
-/*
- */
-- (dispatch_queue_t)trackerQueue;
-/*
- */
-- (NSString *)trackerName;
-
-@end
-
-@interface ANTrackerNode : NSObject {
-    
-@public
-	id <ANTracker> tracker;
-	dispatch_queue_t trackerQueue;
-}
-
-+ (ANTrackerNode *)nodeWithTracker:(id <ANTracker>)tracker trackerQueue:(dispatch_queue_t)trackerQueue;
-
-@end
-
 typedef enum _ANTrackType
 {
     ANTrackTypeBegin = 0,
@@ -91,81 +46,34 @@ typedef enum _ANTrackType
 
 @end
 
-@interface ANTrackServer : NSObject
+@protocol ANTracker <NSObject>
 
+@required
 /*
  */
-+ (void)startWithTrackers:(NSArray *)trackers;
-
+- (void)trackEvent:(ANTrackInfo *)trackInfo;
 /*
  */
-+ (dispatch_queue_t)trackingQueue;
+- (void)trackPage:(ANTrackInfo *)trackInfo;
 
+@optional
 /*
  */
-+ (void)track:(NSString *)module
-        event:(NSString *)event;
-
+- (void)setConfig;
 /*
  */
-+ (void)track:(NSString *)module
-        event:(NSString *)event
-        label:(NSString *)label;
-
+- (void)didAddTracker;
 /*
  */
-+ (void)track:(NSString *)module
-        event:(NSString *)event
-        label:(NSString *)label
- accumulation:(NSInteger)accumulation;
-
+- (void)willRemoveTracker;
 /*
  */
-+ (void)track:(NSString *)module
-        event:(NSString *)event
-        label:(NSString *)label
-    durations:(NSTimeInterval)durations;
-
+- (Class)infoClass;
 /*
  */
-+ (void)track:(NSString *)module
-        event:(NSString *)event
-   attributes:(NSDictionary *)attributes;
-
+- (dispatch_queue_t)trackerQueue;
 /*
  */
-+ (void)trackEventBegin:module
-                  event:event
-                  label:(NSString *)label;
-
-/*
- */
-+ (void)trackEventEnd:module
-                event:event
-                label:(NSString *)label;
-
-/*
- */
-+ (void)trackPageBegin:(NSString *)page;
-
-/*
- */
-+ (void)trackPageEnd:(NSString *)page;
-
-/*
- */
-+ (void)trackWithInfo:(ANTrackInfo *)info;
-
-/*
- */
-+ (void)addTracker:(id <ANTracker>)tracker;
-
-/*
- */
-+ (void)removeTracker:(id <ANTracker>)tracker;
-
-/*
- */
-+ (void)removeAllTrackers;
+- (NSString *)trackerName;
 
 @end

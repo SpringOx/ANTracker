@@ -78,6 +78,11 @@
     // do nothing
 }
 
+- (Class)infoClass
+{
+    return [ANDIYTrackInfo class];
+}
+
 - (NSString *)trackerName
 {
     return NSStringFromClass([self class]);
